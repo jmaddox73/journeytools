@@ -17,7 +17,7 @@ Place this script inside your project, e.g.:
 
 ```
 journeytools/
-└── actionCounter/
+└── actionReport/
     ├── actionCounter.js
     ├── ciam_mobile.json (your export file)
     └── README.md
