@@ -1,0 +1,590 @@
+{
+  "counts": {
+    "Applications": 1,
+    "Server API Applications": 0,
+    "Web Applications": 0,
+    "Mobile Applications": 1,
+    "OIDC Applications": 0,
+    "SAML Applications": 0,
+    "Web Request ECs": 75,
+    "AuthScript ECs": 155,
+    "Journeys": 28,
+    "Journey Versions (enabled only)": 29,
+    "SubJourneys": 46,
+    "Email Provider ECs": 1,
+    "Identity Store ECs": 1,
+    "OTP Generator ECs": 0,
+    "SMS Providers": 1
+  },
+  "journeyVersionsCount": 29,
+  "journeyVersions": [
+    {
+      "app": "ciam_mobile",
+      "policy": "default_config",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_reg",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_unreg",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_bind",
+      "version": "default_bind_version_3"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_logout",
+      "version": "default_logout_version_4"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_display_devices",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_rename_device",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_remove_device",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "default_notify_device",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "AUTHENTICATION_CUSTOMER_MBL",
+      "version": "authentication_customer_mbl_version_3"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "UNENROLL_CUSTOMER_MBL",
+      "version": "unenroll_customer_mbl_version_2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "AUTHENTICATION_SETTINGS_CONFIGURATION_MBL",
+      "version": "authentication_settings_configuration_mbl_version_4"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "AUTHENTICATION_SETTINGS_ENROLL_MBL",
+      "version": "authentication_settings_enroll_mbl_version_3"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "AUTHENTICATION_SETTINGS_EDIT_PASSCODE_MBL",
+      "version": "authentication_settings_edit_passcode_mbl_version_2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "AUTHENTICATION_SETTINGS_ENABLE_DISABLE_PASSCODE_MBL",
+      "version": "authentication_settings_enable_disable_passcode_mbl_version_2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "KEEP_ALIVE_MBL",
+      "version": "keep_alive_mbl_version_4"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "GET_LEGACY_SESSION",
+      "version": "get_legacy_session_version_4"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "ACCESS_TOKEN_REQUEST_MBL",
+      "version": "auth_token_request_mbl_v2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "ONLINE_ENROLLMENT_MBL",
+      "version": "online_enrollment_mbl_version_2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "ONLINE_ENROLLMENT_MBL",
+      "version": "online_enrollment_mbl_version_3"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "ADD_ALLY_ID_MBL",
+      "version": "add_ally_id_version_3"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "SELFSERVICE_GET_SECURITY_PROFILE_MBL",
+      "version": "selfservice_get_security_profile_mbl_version_2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "SELFSERVICE_UPDATE_SECURITY_PROFILE_MBL",
+      "version": "selfservice_update_security_profile_mbl_version_3"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "GET_ATOMIC_ACCESS_TOKEN_MBL",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "BUSINESS_USER_RECOVER_PWD_MBL",
+      "version": "business_user_recover_pwd_mbl_version_2"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "PUSH_APPROVAL_MBL",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "TRANSFER_TICKET_REQUEST_MBL",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "GET_CENLAR_SAML_MBL",
+      "version": "default_version"
+    },
+    {
+      "app": "ciam_mobile",
+      "policy": "AO_ONLINE_ENROLLMENT_MBL",
+      "version": "default_version"
+    }
+  ],
+  "journeyVersionsGrouped": {
+    "ciam_mobile": {
+      "default_config": [
+        "default_version"
+      ],
+      "default_reg": [
+        "default_version"
+      ],
+      "default_unreg": [
+        "default_version"
+      ],
+      "default_bind": [
+        "default_bind_version_3"
+      ],
+      "default_logout": [
+        "default_logout_version_4"
+      ],
+      "default_display_devices": [
+        "default_version"
+      ],
+      "default_rename_device": [
+        "default_version"
+      ],
+      "default_remove_device": [
+        "default_version"
+      ],
+      "default_notify_device": [
+        "default_version"
+      ],
+      "AUTHENTICATION_CUSTOMER_MBL": [
+        "authentication_customer_mbl_version_3"
+      ],
+      "UNENROLL_CUSTOMER_MBL": [
+        "unenroll_customer_mbl_version_2"
+      ],
+      "AUTHENTICATION_SETTINGS_CONFIGURATION_MBL": [
+        "authentication_settings_configuration_mbl_version_4"
+      ],
+      "AUTHENTICATION_SETTINGS_ENROLL_MBL": [
+        "authentication_settings_enroll_mbl_version_3"
+      ],
+      "AUTHENTICATION_SETTINGS_EDIT_PASSCODE_MBL": [
+        "authentication_settings_edit_passcode_mbl_version_2"
+      ],
+      "AUTHENTICATION_SETTINGS_ENABLE_DISABLE_PASSCODE_MBL": [
+        "authentication_settings_enable_disable_passcode_mbl_version_2"
+      ],
+      "KEEP_ALIVE_MBL": [
+        "keep_alive_mbl_version_4"
+      ],
+      "GET_LEGACY_SESSION": [
+        "get_legacy_session_version_4"
+      ],
+      "ACCESS_TOKEN_REQUEST_MBL": [
+        "auth_token_request_mbl_v2"
+      ],
+      "ONLINE_ENROLLMENT_MBL": [
+        "online_enrollment_mbl_version_2",
+        "online_enrollment_mbl_version_3"
+      ],
+      "ADD_ALLY_ID_MBL": [
+        "add_ally_id_version_3"
+      ],
+      "SELFSERVICE_GET_SECURITY_PROFILE_MBL": [
+        "selfservice_get_security_profile_mbl_version_2"
+      ],
+      "SELFSERVICE_UPDATE_SECURITY_PROFILE_MBL": [
+        "selfservice_update_security_profile_mbl_version_3"
+      ],
+      "GET_ATOMIC_ACCESS_TOKEN_MBL": [
+        "default_version"
+      ],
+      "BUSINESS_USER_RECOVER_PWD_MBL": [
+        "business_user_recover_pwd_mbl_version_2"
+      ],
+      "PUSH_APPROVAL_MBL": [
+        "default_version"
+      ],
+      "TRANSFER_TICKET_REQUEST_MBL": [
+        "default_version"
+      ],
+      "GET_CENLAR_SAML_MBL": [
+        "default_version"
+      ],
+      "AO_ONLINE_ENROLLMENT_MBL": [
+        "default_version"
+      ]
+    }
+  },
+  "components": {
+    "applications": [
+      "ciam_mobile  type:  mobile"
+    ],
+    "serverApi": [],
+    "webApp": [],
+    "mobileApp": [
+      "ciam_mobile"
+    ],
+    "oidcApp": [],
+    "samlApp": [],
+    "webRequestEC": [
+      "API_CAPI_SEARCH_BY_SSN_DOB_V2",
+      "API_FID_MULTI_DIRECTORY_SEARCH",
+      "ATOMIC_GET_PUBLIC_TOKEN",
+      "API_FID_DELETE_GUEST_USER",
+      "TEWS_INCREMENT_SSN_COUNTER",
+      "OLE_CCN_SEND_OTP_SMS",
+      "FID_AWS_AUTHENTICATE_V2",
+      "FID_GET_CUSTOM_USERATTRIBUTES_MAPS_LIST",
+      "DAPI_UPDATE_TPIN_AND_SECURITY_QUESTION_ANSWER",
+      "API_FID_CREATE_AUTO_LEGACY",
+      "LLE_STORE_OTP",
+      "API_CAPI_GET_USERS_BY_EMAIL",
+      "API_FID_UPDATE_AUTO_EXTENSION",
+      "API_CAPI_AUTO_SEARCH_BY_SSN_DOB_V1",
+      "FID_AWS_AUTHENTICATE_V3",
+      "API_FID_DELETE_AUTO_USER",
+      "API_TRANSMIT_DELETE_USER",
+      "CCN_GET_OAUTH_TOKEN",
+      "FID_AUTHENTICATE_USER_V1",
+      "API_ACM_V6_VERIFY_CUSTOMER_SSN_DOB",
+      "API_CAPI_GET_AUTO_ACCOUNTS_BY_ACCNO_V2",
+      "FID_CHANGE_PWD_AUTO_V2",
+      "FID_VERIFY_USERNAME",
+      "API_FID_GET_AUTO_USER",
+      "API_FID_UPDATE_USER_MULTI_DIRECTORY_V2",
+      "FID_CHANGE_PWD_V1",
+      "OLE_DAPI_SEND_OTP_EMAIL",
+      "OLE_CCN_SEND_OTP_VOICE",
+      "API_FID_GET_AUTO_USER_EXTENSION",
+      "API_FID_DELETE_AUTO_EXT_USER",
+      "TEWS_CHECK_TASK_STATUS",
+      "API_FID_CREATE_USER",
+      "API_FID_CREATE_GUEST_USER",
+      "FID_CHANGE_PWD_AUTO_OPER_ATTR",
+      "HTML_ENCODE_TEXT",
+      "API_FID_TWO_ATTRIBUTE_SEARCH",
+      "DAPI_UPDATE_CUSTOMER_AUTH",
+      "ACM_V6_ADD_ALTID_BY_ALTID_SYNC",
+      "FID_CHANGE_PWD_V2",
+      "API_SEARCH_USER_BY_LOGINNAME_V1",
+      "API_FID_CHANGE_AUTO_USERNAME",
+      "FID_GET_USER_LDAP_DATA",
+      "API_ACM_V6_UPDATE_USER",
+      "FID_UPDATE_USER_ATTRIBUTES_ENROLLMENT_AUTO",
+      "API_CAPI_GENERATE_AAOS_PROFILE_ID",
+      "FULCRUM_PRODUCER_V1",
+      "CAPI_ODS_GET_CUSTOMER_INFO_V2",
+      "FID_UPDATE_USER_ATTRIBUTES_AUTO_EXTENSION",
+      "GET_AEM_ESIGN_VERSION",
+      "SEND_CCN_ALERTS_V2",
+      "API_FID_UPDATE_USER_MULTI_DIRECTORY",
+      "DAPI_VERIFY_CUSTOMER",
+      "SET_FLEXID_USER_CUSTOM_DATA",
+      "TEWS_RESET_SSN_COUNTER",
+      "AAP_FOR_AFG",
+      "DECRYPT_TEXT",
+      "CAPI_GET_ACCOUNTS",
+      "FID_UPDATE_USER_ATTRIBUTES",
+      "ACM_V6_ADD_ALTID_BY_ALTID_SYNC_V2",
+      "LOG_AUDIT_RECORD_V2",
+      "FID_DELETE_USER",
+      "API_FID_GET_AUTO_USER_LEGACY",
+      "CAPI_PROFILE_RECONCILE_GET",
+      "API_CAPI_AUTO_SEARCH_BY_TPN_V1",
+      "AAOS_UPDATE_ESIGN",
+      "TRANSMIT_UPDATE_USERNAME",
+      "GET_TRANSMIT_DEVICE_DETAILS",
+      "API_FID_UPDATE_AUTO_LEGACY",
+      "ACM_V6_CREATE_CUSTOMER_FROM_FIS_INFO",
+      "ACM_V6_ADD_ALTID_BY_GUID_SYNC",
+      "ENCRYPT_TEXT",
+      "API_FID_UPDATE_GUEST_USER",
+      "API_CAPI_GENERATE_AAOS_PROFILE_ID_V2",
+      "FORTY_FIRST_P_V2",
+      "ACM_V6_UPDATE_CUSTOMER_CONTACT"
+    ],
+    "authScriptEC": [
+      "AS_LDAP_REPAIR_LOGIC_V4",
+      "HAS_PREVIOUS_CONSENTS",
+      "ROLLBACK_AUTO_LDAP_UPDATES",
+      "STRING_LIST_LOOKUP",
+      "PROCESS_OTP_FORM_VALIDATION_V2",
+      "AS_FID_UPDATE_MASTER_WITH_AUTO_LDAP_DATA",
+      "VALIDATE_CHANGE_PASSWORD_FORM_V1",
+      "AS_GET_CUSTOMER_INFO_FROM_LDAP_WITH_AUTHENTICATION_SUB_FID",
+      "DAPI_CCN_ALERT_ROUTER",
+      "GET_ENCRYPTED_VALUE_FOR_LOGGING",
+      "LOG_BUILD_FORM_EVENT_DATA",
+      "AS_CREATE_AUTO_BUSINESS_LDAP_DATA",
+      "GET_SESSIONS_AND_UPDATE",
+      "LOG_INIT_CHECKPOINT_V2",
+      "USER_NAME_VALIDATION",
+      "VALIDATE_AND_GET_CIAM_SESSION_IN_APIGEE",
+      "GET_CUSTOMER_INFO_FROM_IDENTITY_STORE",
+      "GET_USER_ROLES",
+      "AS_FID_CREATE_LEGACY_AUTO_LDAP_DATA_ENROLLMENT_V1",
+      "GENERATE_CENLAR_SAML_TOKEN",
+      "CONTAINS_INVALID_CHARACTERS",
+      "GET_VALUE_SAFE_FOR_LOGGING",
+      "CREATE_WEB_CALL_FAILURE",
+      "RADIANT_USERNAME_ENCODING_UTIL",
+      "OTP_DELIVERY_OPTION_SELECTION_VALIDATION_FORM",
+      "IS_LOGINNAME_VALID",
+      "AS_USERNAME_CONTAINS_MASKED_CHARS",
+      "CHECK_MASKED_OTP_VALUE",
+      "AS_COMBINE_CUSTOMER_INFO_AND_CAPI_ODS_RESPONSE_V2",
+      "IS_AUTO_FULL_ENABLED",
+      "GET_SESSIONS_AND_INVALIDATE",
+      "REFORMAT_LDAP_TIMESTAMP_TO_41P_FORMAT",
+      "GET_ENV_COMMONPROPERTIES_V1",
+      "CHECK_AAOS_USERNAME_CONFLICT_FOR_BANK_DURING_LINKING",
+      "LLE_UPDATE_CUSTOM_DATA_WITH_IOS_PUSH_DATA",
+      "IS_PHONENUMBER_VALID",
+      "UPDATE_CUSTOMER_INFO_AUTO_MIGRATED",
+      "AS_GUEST_GRADUATION_COMPLETION",
+      "AS_GET_CUSTOMER_INFO_SAFE_FIELDS_INTERNAL_V1",
+      "IS_BIOMETRICS_ENROLLED",
+      "VERIFY_CUSTOMER_FORM_VALIDATION_V1",
+      "AS_FID_CREATE_CUSTOMER_USER_V2",
+      "CREATE_CUSTOMER_INFO_V2",
+      "LOG_COMPLETE_UI_CHECKPOINT_V2",
+      "AS_CAPI_GET_USERS_BY_EMAIL_V1",
+      "INTEGER_STRING_LIST_LOOKUP",
+      "DETERMINE_AUTO_FLOW_BANK_LOGIN",
+      "APPEND_REGION_SUFFIX",
+      "DETERMINE_MRC_STATUS_V2",
+      "AS_DELETE_AUTO_USER_EXT",
+      "USERNAME_PASSWORD_DECODING_UTIL",
+      "AS_GET_BIOMETRIC_AUTHENTICATORS",
+      "FORMAT_VALIDATE_ENCRYPT_SSN",
+      "LOG_JOURNEY_REJECTION_V2",
+      "IS_41P_REQUIRED",
+      "AS_DECRYPT_AND_VERIFY_ENROLLMENT_TOKEN",
+      "AS_DELETE_AUTO_USER_LEGACY",
+      "CREATE_CREDENTIALS_FORM_VALIDATION_V2",
+      "AS_FID_HARD_LINK_AND_MIGRATE_STEP2_AUTO_EXTENSION",
+      "AS_COMBINE_CUSTOMER_INFO_AND_LDAP_RESPONSE_V3",
+      "DETERMINE_AUTO_FLOW_AUTO_LOGIN",
+      "AS_DETERMINE_USER_TYPE_V2",
+      "AS_FID_UPDATE_GUEST_CONSENTS",
+      "AS_CAPI_HANDLE_PROFILE_ID",
+      "GET_ENROLLED_BIOMETRIC_AUTHENTICATOR",
+      "DELIVERY_METHODS_FOR_SS",
+      "DETERMINE_CCN_ALERT_CODE",
+      "AS_FID_CREATE_AUTO_EXT_LDAP_DATA_ENROLLMENT_V1",
+      "PARSE_DATE_TIME",
+      "LOG_JOURNEY_START_V2",
+      "ACCOUNT_LINKING_USERNAME_PASSWORD_VALIDATION_HANDLER",
+      "IS_FIRST_LAST_NAME_VALID",
+      "LOG_JOURNEY_REJECTION",
+      "LOG_JOURNEY_COMPLETION_V2",
+      "LOG_SINGLE_EVENT",
+      "AS_VALIDATE_FIELDS",
+      "UPDATE_PASSWORD_DECODED_FLAG",
+      "AS_FID_GET_ALL_USERS_BY_LOGINNAME_V1",
+      "AS_FID_CREATE_CUSTOMER_USER",
+      "AS_FID_UPDATE_MASTER_REMOVE_PROFILE_ID",
+      "AS_FID_HARD_LINK_AND_MIGRATE_STEP3_AUTO_LEGACY",
+      "LOG_COMPLETE_CHECKPOINT_V2",
+      "GET_CUSTOMER_INFO_SAFE_FOR_LOGGING",
+      "PASSWORD_CONSTRAINT_VALIDATION",
+      "GET_USER_SCOPES",
+      "AS_GET_CUSTOMER_INFO_FROM_LDAP_WITH_AUTHENTICATION",
+      "AS_ADD_PROFILE_ID",
+      "SMS_MASKING",
+      "AS_FID_GET_DIRECTORY_ATTRIBUTE_NAME",
+      "AS_FID_IS_USERNAME_CONFLICT",
+      "IS_RESISTERED_IN_BIOMETRICS",
+      "AS_DETERMINE_USER_TYPE",
+      "IS_CONSENT_VALID",
+      "ACCT_NUM_OR_VIN_HANDLER",
+      "CREATE_CUSTOMER_INFO_V3",
+      "LOG_BUILD_WEB_RESPONSE_EVENT_DATA",
+      "AS_GENERATE_FULCRUM_EVENT_V1",
+      "AS_CREATE_CUSTOMER_INFO_FALLBACK_V1",
+      "GET_USER_SESSION",
+      "EMAIL_MASKING",
+      "CREATE_CREDENTIALS_FORM_VALIDATION",
+      "ACM_V6_TO_V4_RESPONSE_WRAPPER",
+      "AS_CREATE_SESSION_AND_RESPONSE_INFO",
+      "AS_GENERATE_ALLY_ID",
+      "USERNAME_PASSWORD_ENCODING_UTIL",
+      "AS_MIGRATE_AUTO_ONLY",
+      "AS_DETERMINE_CONSOLIDATED_CONSENTS",
+      "AS_LOG_MISMATCHED_LOB_IDENTIFIERS",
+      "AS_FID_CREATE_AUTO_EXT_LDAP_DATA",
+      "PASSWORD_STRENGTH_CALCULATOR",
+      "AS_FID_HARD_LINK_AND_MIGRATE_CONSOLIDATED",
+      "AS_DETERMINE_GUEST_CONSENTS",
+      "VALIDATE_OTP",
+      "AS_ACM_UPDATE_CONSOLIDATED_CONSENTS",
+      "AS_USERNAME_VALIDATION_V1",
+      "LOG_JOURNEY_START_AS",
+      "IS_PASSWORDHINT_VALID",
+      "GET_CHAT_TOKEN_V4",
+      "IS_BLANK",
+      "IS_BIOMETRICS_FF_ENABLED",
+      "LOG_SYSTEM_ERROR_V2",
+      "CHECK_OTP_MASKING",
+      "AS_FID_CREATE_LEGACY_AUTO_LDAP_DATA",
+      "GET_USER_LAST_LOGIN_TIMESTAMP",
+      "LOG_SINGLE_EVENT_V2",
+      "GET_LAST_LOGIN_TIMESTAMP",
+      "AS_LOG_AUDIT_RECORD_V3",
+      "AS_APIGEE_VALIDATION",
+      "AS_GET_CUSTOMER_INFO_FROM_CAPI_ODS",
+      "GET_SESSIONS_CLEANUP_AND_ADD",
+      "AS_DECRYPT_REFRESHTOKEN",
+      "V2_PASSWORD_VALIDATION",
+      "DELIVERY_OPTIONS_VALIDATION_FORM",
+      "AS_GET_CUSTOMER_INFO_FROM_IDENTITY_STORE_V2",
+      "AS_FID_REVERSE_ADD_ACCT_AND_DAO_INVALIDATIONS",
+      "GENERATE_DATA_TOKEN_PAYLOAD",
+      "LOG_SYSTEM_ERROR_AS",
+      "AS_FID_HARD_LINK_AND_MIGRATE_STEP1_MASTER",
+      "RESOLVE_PASSCODE_STATUS",
+      "CONSTRUCT_USERINFO_OBJECT",
+      "IS_NULL_OR_EMPTY",
+      "CHECK_FOR_PII",
+      "AS_GET_ALLY_ID_ATTRIBUTE_NAME",
+      "IS_CASE_INSENSITIVE_EQUAL",
+      "GET_AGE_STATUS",
+      "AS_BUILD_FULCRUM_MESSAGE_PAYLOAD_V1",
+      "LOG_INIT_UI_CHECKPOINT_V2",
+      "AS_GENERATE_41P_EVENT_V1",
+      "IS_EMAILADDRESS_VALID",
+      "GET_CURRENT_TIMESTAMP_LDAP_FORMAT",
+      "OTP_VALIDATION_FORM",
+      "IS_AUTO_ONLY_USER_CAPI",
+      "AS_GET_AUTO_LDAP_DATA_WITH_AUTHENTICATION",
+      "IS_NOT_NULL_OR_EMPTY",
+      "APPEND_AUTO_CCM"
+    ],
+    "journeys": [
+      "ciam_mobile: default_config",
+      "ciam_mobile: default_reg",
+      "ciam_mobile: default_unreg",
+      "ciam_mobile: default_bind",
+      "ciam_mobile: default_logout",
+      "ciam_mobile: default_display_devices",
+      "ciam_mobile: default_rename_device",
+      "ciam_mobile: default_remove_device",
+      "ciam_mobile: default_notify_device",
+      "ciam_mobile: AUTHENTICATION_CUSTOMER_MBL",
+      "ciam_mobile: UNENROLL_CUSTOMER_MBL",
+      "ciam_mobile: AUTHENTICATION_SETTINGS_CONFIGURATION_MBL",
+      "ciam_mobile: AUTHENTICATION_SETTINGS_ENROLL_MBL",
+      "ciam_mobile: AUTHENTICATION_SETTINGS_EDIT_PASSCODE_MBL",
+      "ciam_mobile: AUTHENTICATION_SETTINGS_ENABLE_DISABLE_PASSCODE_MBL",
+      "ciam_mobile: KEEP_ALIVE_MBL",
+      "ciam_mobile: GET_LEGACY_SESSION",
+      "ciam_mobile: ACCESS_TOKEN_REQUEST_MBL",
+      "ciam_mobile: ONLINE_ENROLLMENT_MBL",
+      "ciam_mobile: ADD_ALLY_ID_MBL",
+      "ciam_mobile: SELFSERVICE_GET_SECURITY_PROFILE_MBL",
+      "ciam_mobile: SELFSERVICE_UPDATE_SECURITY_PROFILE_MBL",
+      "ciam_mobile: GET_ATOMIC_ACCESS_TOKEN_MBL",
+      "ciam_mobile: BUSINESS_USER_RECOVER_PWD_MBL",
+      "ciam_mobile: PUSH_APPROVAL_MBL",
+      "ciam_mobile: TRANSFER_TICKET_REQUEST_MBL",
+      "ciam_mobile: GET_CENLAR_SAML_MBL",
+      "ciam_mobile: AO_ONLINE_ENROLLMENT_MBL"
+    ],
+    "subJourneys": [
+      "DAPI_41P_NOTIFY_MBL_SJ_V2",
+      "CA_TEWS_CHECK_TASK_STATUS_MBL_SJ_V2",
+      "MFA_LOCKOUT_MBL_SJ_V2",
+      "MFA_DENY_MBL_SJ_V2",
+      "AUTHENTICATE_MBL_SJ_V2",
+      "BIOMETRICS_LOGIN_FAILURE_NOTIFY_MBL_SJ_V2",
+      "ENROLL_CUSTOMER_MBL_SJ_V2",
+      "MDB_SESSION_UPDATE_MBL_SJ_V2",
+      "MDB_SESSION_INVALIDATE_MBL_SJ_V2",
+      "ENROLL_BIOMETRICS_MBL_SJ_V2",
+      "ENROLL_PASSCODE_MBL_SJ_V2",
+      "MDB_SESSION_CREATE_MBL_SJ_V4",
+      "FORGOT_PASSWORD_MBL_SJ_CAPI_ODS",
+      "CA_TEMP_CHANGE_PASSWORD_FID_MBL_SJ_V1",
+      "LOGIN_SUCCESS_NOTIFY_MBL_SJ_CAPI_ODS",
+      "CUSTOM_MFA_CHALLENGE_MBL_SJ",
+      "SJ_GET_MFA_STATUS",
+      "SJ_DEVICE_BIND_MBL_SJ_V3",
+      "SJ_MFA_SETUP_UNVERIFIED_MBL_SJ_V3",
+      "SJ_GUEST_LOGIN_MBL",
+      "SJ_MFA_CHALLENGE_MBL_SJ_V3",
+      "SJ_RECOVER_PASSWORD_RECOVERY_OPTIONS_MBL",
+      "SJ_COMPLETE_SESSION_AUTHN_AND_JOURNEY_MBL_V1",
+      "SJ_GUEST_GRADUATION_COMPLETION_MBL",
+      "PROCESS_FID_DATA_MBL_SJ",
+      "SJ_MIGRATION_COMPLETION_MBL",
+      "SJ_VALIDATE_AND_HARD_LINK_MBL",
+      "SJ_CHANGE_BANK_USERNAME_MBL",
+      "SJ_HANDLE_CONSOLIDATED_CONSENTS_MBL",
+      "SJ_ADD_ACCOUNT",
+      "OLE_VERIFY_CUSTOMER_MBL_SJ_V1",
+      "OLE_CREATE_CREDENTIALS_MBL_SJ_V1",
+      "SJ_OLE_MFA_SETUP_MBL_V3",
+      "OLE_AUTHENTICATION_CUSTOMER_MBL_SJ_V1",
+      "SJ_RECOVER_PASSWORD_MBL_AUTO",
+      "SJ_HANDLE_LINKING_FROM_TICKET",
+      "AUTHENTICATION_COMPLETION_AUTO_MIGRATION_SJ_MBL",
+      "AUTHENTICATION_CUSTOMER_MBL_SJ_V1",
+      "AUTHENTICATION_CUSTOMER_MBL_SJ_V2",
+      "AUTHENTICATE_MBL_SJ_V3",
+      "SJ_SYNC_MOBILE_APPROVAL_ENABLED",
+      "AO_AUTHENTICATION_CUSTOMER_MBL_SJ",
+      "OLE_VERIFY_CUSTOMER_MBL_SJ_V2",
+      "OLE_MFA_SETUP_MBL_SJ_V2",
+      "OLE_CREATE_CREDENTIALS_MBL_SJ_V2",
+      "OLE_AUTHENTICATION_CUSTOMER_MBL_SJ_V2"
+    ],
+    "emailProviders": [
+      "DAPI_SEND_OTP_EMAIL_V1"
+    ],
+    "idStoreProviders": [
+      "FID_AUTHENTICATE_V1"
+    ],
+    "otpGenerators": [],
+    "smsProviders": [
+      "CCN_SEND_OTP_SMS"
+    ]
+  }
+}
