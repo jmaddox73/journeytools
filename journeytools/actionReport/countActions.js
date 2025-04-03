@@ -40,16 +40,16 @@ function countActionsUnderPolicies(data) {
       const policies = exportItem.data.policies;
 
       policies.forEach((policy) => {
-        const workflow = policy.versions[0].workflow; // Only checking first version
+        //const workflow = policy.versions[0].workflow; // Only checking first version
         const policyId = policy.policy_id;
 
+        // Function to count actions recursively inside workflow
         function countActionsRecursive(obj) {
           let count = 0;
           if (obj && typeof obj === "object") {
             if (obj.metadata) {
-              count += 1; // Count when 'metadata' key exists
+              count += 1;
             }
-            // Traverse nested properties
             for (const key in obj) {
               count += countActionsRecursive(obj[key]);
             }
@@ -57,13 +57,18 @@ function countActionsUnderPolicies(data) {
           return count;
         }
 
-        const actionCount = countActionsRecursive(workflow); // Count actions in this workflow
+        // Loop through versions and sum up actions only for enabled versions
+        policy.versions.forEach((version) => {
+          if (version.state !== "disabled") {
+            const workflow = version.workflow;
+            const actionCount = countActionsRecursive(workflow);
 
-        // Accumulate action count per policy ID
-        if (!actionCounts[policyId]) {
-          actionCounts[policyId] = 0;
-        }
-        actionCounts[policyId] += actionCount;
+            if (!actionCounts[policyId]) {
+              actionCounts[policyId] = 0;
+            }
+            actionCounts[policyId] += actionCount;
+          }
+        });
       });
     }
   });

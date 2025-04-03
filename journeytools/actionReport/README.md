@@ -1,36 +1,31 @@
-# Action Counter for CIAM JSON Exports
+# actionCounter
 
-This script analyzes a CIAM (Customer Identity and Access Management) JSON export file and reports:
-
-- The number of procedures (subjourneys)
-- The number of `action` objects within each procedure
-- The number of `metadata` actions within journey (policy) workflows
-- Summary statistics such as the max and average action counts
-
-It supports output in either JSON or CSV format based on user input.
+This tool analyzes a CIAM (Customer Identity and Access Management) export JSON file and calculates metrics related to subjourney (procedure) and journey (policy) complexity — specifically the number of actions configured inside each.
 
 ---
 
-## 📁 Directory Structure
+## 📦 Features
 
-Place this script inside your project, e.g.:
-
-```
-journeytools/
-└── actionReport/
-    ├── actionCounter.js
-    ├── ciam_mobile.json (your export file)
-    └── README.md
-```
+- Counts all **subjourneys** and **journeys** (policies)
+- Recursively counts actions in each subjourney (`action` key)
+- Recursively counts actions in each policy workflow (`metadata` key)
+- **Ignores disabled journey (policy) versions** — only enabled versions are considered
+- Outputs to either **JSON** or **CSV**
+- Displays summary metrics:
+  - Total procedure count
+  - Max actions in a subjourney
+  - Max actions in a journey
+  - Average action counts across all
 
 ---
 
-## ✅ Requirements
+## 🧰 Requirements
 
-- [Node.js](https://nodejs.org/) (v14+ recommended)
-- NPM package: `json2csv`
+- Node.js (v14+ recommended)
+- NPM modules:
+  - `json2csv` for CSV export
 
-You can install the dependency using:
+Install dependencies by running:
 
 ```bash
 npm install json2csv
@@ -38,119 +33,72 @@ npm install json2csv
 
 ---
 
-## ✨ Usage
+## 🚀 Usage
 
-From the command line, run the script using:
+From within the `actionCounter/` directory:
 
 ```bash
 node actionCounter.js <inputFile.json> <json|csv>
 ```
 
-### Example
+### Arguments
+
+| Argument             | Description                                                  |
+|----------------------|--------------------------------------------------------------|
+| `<inputFile.json>`   | CIAM export file to process                                  |
+| `json`               | Output results as a `.json` file                             |
+| `csv`                | Output results as a `.csv` file                              |
+| `-h`, `--help`       | Display usage instructions                                   |
+
+---
+
+## 📂 Output
+
+- If `json` is selected:  
+  Outputs a structured JSON with counts, lists, and summary:
+
+  ```json
+  {
+    "procedureCount": 46,
+    "procedureActions": [...],
+    "actionsUnderPolicies": {...},
+    "report": {
+      "maxProcedure": {...},
+      "maxPolicy": {...},
+      "averageProcedureActions": ...,
+      "averagePolicyActions": ...
+    }
+  }
+  ```
+
+- If `csv` is selected:  
+  Output includes one flat CSV file with columns:
+  ```
+  Category, Name, Actions
+  ```
+
+---
+
+## 📝 Notes
+
+- For journeys, only versions with `"state" !== "disabled"` are considered.
+- Each `"metadata"` object in a workflow is counted as a policy action.
+- Each `"action"` key in a subjourney is counted as a subjourney action.
+
+---
+
+## 📁 Example
 
 ```bash
 node actionCounter.js ciam_mobile.json json
+# ➜ creates: ciam_mobile_actionCount.json
+
 node actionCounter.js ciam_mobile.json csv
+# ➜ creates: ciam_mobile_actionCount.csv
 ```
 
 ---
 
-## 📟 Arguments
+## 📌 License
 
-| Argument            | Description                                         |
-|---------------------|-----------------------------------------------------|
-| `<inputFile.json>`  | Path to the CIAM export file you want to analyze    |
-| `json`              | Output results in a JSON file                       |
-| `csv`               | Output results in a CSV file                        |
-| `-h`, `--help`      | Show help message and usage instructions            |
-
----
-
-## 📄 Output Files
-
-The output files are saved in the current directory and named using the input filename plus the suffix `_actionCount`.
-
-### JSON Output
-
-If `json` is selected, output is saved to:
-
-```
-<inputFile>_actionCount.json
-```
-
-The JSON includes:
-
-- Total number of procedures
-- Actions per procedure
-- Actions per policy
-- Summary report:
-  - Max procedure
-  - Max policy
-  - Average actions per procedure
-  - Average actions per policy
-
----
-
-### CSV Output
-
-If `csv` is selected, output is saved to:
-
-```
-<inputFile>_actionCount.csv
-```
-
-The CSV includes:
-
-| Category   | Name                           | Actions |
-|------------|--------------------------------|---------|
-| SubJourney | SJ_ENROLL_CUSTOMER_V1         | 22      |
-| Journey    | AUTHENTICATION_MFA            | 10      |
-| Summary    | Max SubJourney                | ENROLL_PASSCODE (51) |
-| Summary    | Avg Journey Actions           | 26.3    |
-| ...        | ...                            | ...     |
-
----
-
-## 🔍 What Does It Analyze?
-
-- **Subjourneys**: Looks for `"action"` keys to determine how many logical steps are defined in each procedure.
-- **Journeys (Policies)**: Analyzes the first version of each policy's workflow and counts nodes with `"metadata"` defined.
-- Only `"metadata"` and `"action"` objects are considered significant for the counts.
-
----
-
-## 📦 Example Output (JSON)
-
-```json
-{
-  "procedureCount": 46,
-  "procedureActions": [
-    { "procedureName": "SJ_LOGIN", "actionCount": 18 },
-    { "procedureName": "SJ_REGISTER", "actionCount": 24 }
-  ],
-  "actionsUnderPolicies": {
-    "LOGIN_POLICY": 10,
-    "REGISTER_POLICY": 14
-  },
-  "report": {
-    "maxProcedure": {
-      "procedureName": "SJ_REGISTER",
-      "actionCount": 24
-    },
-    "maxPolicy": {
-      "policyId": "REGISTER_POLICY",
-      "actionCount": 14
-    },
-    "averageProcedureActions": 21,
-    "averagePolicyActions": 12
-  }
-}
-```
-
----
-
-## 👨‍💻 Author
-
-Jeff Maddox  
-MIT License
-
+MIT
